@@ -1,0 +1,25 @@
+name: Deployment
+
+on: push
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'no-op'
+        run: echo "::no-op"
+
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'no-op'
+        run: echo "::no-op"
+
+  Deployment:
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://github.com
+    steps:
+      - name: 'no-op'
+        run: echo "::no-op"
